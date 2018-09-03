@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B17169D3-432D-46D1-82DF-131DCA1B0784}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>DAFENHS_Automated_Enrollment_System.My.MyApplication</StartupObject>
+    <RootNamespace>DAFENHS_Automated_Enrollment_System</RootNamespace>
+    <AssemblyName>DAFENHS Automated Enrollment System</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>DAFENHS Automated Enrollment System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>DAFENHS Automated Enrollment System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>D:\Bunifu Crack\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Additional Forms\AES_About.Designer.vb">
+      <DependentUpon>AES_About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Additional Forms\AES_About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Additional Forms\AES_Settings.Designer.vb">
+      <DependentUpon>AES_Settings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Additional Forms\AES_Settings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main User Controls\ClassSchedule.Designer.vb">
+      <DependentUpon>ClassSchedule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main User Controls\ClassSchedule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main User Controls\Search.Designer.vb">
+      <DependentUpon>Search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main User Controls\Search.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl%28Class Schedule%29\ClassSchedJuniorHigh.Designer.vb">
+      <DependentUpon>ClassSchedJuniorHigh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl%28Class Schedule%29\ClassSchedJuniorHigh.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl%28Enrollment%29\EnrollmentJuniorHigh.Designer.vb">
+      <DependentUpon>EnrollmentJuniorHigh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl%28Enrollment%29\EnrollmentJuniorHigh.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main User Controls\Enrollment.Designer.vb">
+      <DependentUpon>Enrollment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main User Controls\Enrollment.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainForms\Home.Designer.vb">
+      <DependentUpon>Home.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\Home.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security Features\SecurityAdmin.Designer.vb">
+      <DependentUpon>SecurityAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Security Features\SecurityAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\ClearModule.vb" />
+    <Compile Include="Modules\ConnectionModule.vb" />
+    <Compile Include="Security Features\Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Security Features\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\Main.Designer.vb">
+      <DependentUpon>Main.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Security Features\RegisterAccount.Designer.vb">
+      <DependentUpon>RegisterAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Security Features\RegisterAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main User Controls\HomeDesign.Designer.vb">
+      <DependentUpon>HomeDesign.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main User Controls\HomeDesign.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl%28Enrollment%29\EnrollmentSeniorHigh.Designer.vb">
+      <DependentUpon>EnrollmentSeniorHigh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl%28Enrollment%29\EnrollmentSeniorHigh.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl%28Registration%29\JuniorHighRegistration.Designer.vb">
+      <DependentUpon>JuniorHighRegistration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl%28Registration%29\JuniorHighRegistration.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl%28Registration%29\RegisterSection.Designer.vb">
+      <DependentUpon>RegisterSection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl%28Registration%29\RegisterSection.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl%28Registration%29\RegisterSubject.Designer.vb">
+      <DependentUpon>RegisterSubject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl%28Registration%29\RegisterSubject.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl%28Registration%29\RegisterTeacher.Designer.vb">
+      <DependentUpon>RegisterTeacher.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl%28Registration%29\RegisterTeacher.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main User Controls\Registration.Designer.vb">
+      <DependentUpon>Registration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main User Controls\Registration.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl%28Registration%29\SeniorHighRegistration.Designer.vb">
+      <DependentUpon>SeniorHighRegistration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl%28Registration%29\SeniorHighRegistration.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Additional Forms\AES_About.resx">
+      <DependentUpon>AES_About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Additional Forms\AES_Settings.resx">
+      <DependentUpon>AES_Settings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main User Controls\ClassSchedule.resx">
+      <DependentUpon>ClassSchedule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main User Controls\Search.resx">
+      <DependentUpon>Search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl%28Class Schedule%29\ClassSchedJuniorHigh.resx">
+      <DependentUpon>ClassSchedJuniorHigh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl%28Enrollment%29\EnrollmentJuniorHigh.resx">
+      <DependentUpon>EnrollmentJuniorHigh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main User Controls\Enrollment.resx">
+      <DependentUpon>Enrollment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\Home.resx">
+      <DependentUpon>Home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security Features\SecurityAdmin.resx">
+      <DependentUpon>SecurityAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security Features\Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\Main.resx">
+      <DependentUpon>Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security Features\RegisterAccount.resx">
+      <DependentUpon>RegisterAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main User Controls\HomeDesign.resx">
+      <DependentUpon>HomeDesign.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl%28Enrollment%29\EnrollmentSeniorHigh.resx">
+      <DependentUpon>EnrollmentSeniorHigh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl%28Registration%29\JuniorHighRegistration.resx">
+      <DependentUpon>JuniorHighRegistration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl%28Registration%29\RegisterSection.resx">
+      <DependentUpon>RegisterSection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl%28Registration%29\RegisterSubject.resx">
+      <DependentUpon>RegisterSubject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl%28Registration%29\RegisterTeacher.resx">
+      <DependentUpon>RegisterTeacher.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main User Controls\Registration.resx">
+      <DependentUpon>Registration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl%28Registration%29\SeniorHighRegistration.resx">
+      <DependentUpon>SeniorHighRegistration.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
